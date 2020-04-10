@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    line-height: 1;
+    line-height: 1rem;
 }
 /*Header Content*/
 header{
@@ -43,10 +43,9 @@ header{
 
 a:link{
     text-decoration:none;
-    color:black;
 }
 
-.headerNav{
+header nav{
     display:flex;
     justify-content:space-evenly;
     width:100%;
@@ -78,8 +77,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 1.5px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -88,7 +87,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -96,19 +95,19 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: .1rem dashed black;
     padding:1rem;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
 }
 
@@ -125,9 +124,9 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 7rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -176,9 +175,10 @@ p {
     background-color:dodgerblue;
 }
 
+/*That's No Moon*/
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
@@ -190,6 +190,7 @@ p {
     padding-right: 0;
 }
 
+/*Footer Content*/
 footer {
     width: 100%;
     background: black;
@@ -200,11 +201,75 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*Sizing Format*/
+
+@media(max-width:800px){
+
+}
+
+@media(max-width:500px){
+
+    header{
+        flex-direction:column;
+        width:100%;
+        align-content:center;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+
+    
+
+    header nav{
+        flex-direction:column;
+        width:100%;
+        align-content:center;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        padding:1rem;
+    }
+
+    header nav a{
+        padding:.5rem;
+        background-color:lightslategray;
+        width:30%;
+        display:flex;
+        justify-content:center;
+    }
+
+    header nav a:hover{
+        background-color:gray;
+    }
+
+    header img{
+        width:60%;
+        display:inline-block;
+        margin: 0 auto;
+    }
+
+    img{
+        width:100%;
+    }
+
+    .top-content .text-container{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        flex-wrap:wrap;
+    }
+
+    .middle-content .boxes{
+        align-items: center;
+        justify-content:space-around;
+        flex-direction:column;
+        width:100%;
+    }
+    
