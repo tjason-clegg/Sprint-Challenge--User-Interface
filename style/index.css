@@ -29,8 +29,28 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
+/*Header Content*/
+header{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding:2rem;
+    align-content: center;
+}
+
+a:link{
+    text-decoration:none;
+    color:black;
+}
+
+.headerNav{
+    display:flex;
+    justify-content:space-evenly;
+    width:100%;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -77,6 +97,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding:1rem;
 }
 
 .top-content .text-container {
